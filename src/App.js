@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+
+const App = () => {
+  const SadDoge = ({sadDogeSay}) => {
+    return (
+      <div className="Body">
+        <img className="dogeSad" src={'https://cdn130.picsart.com/320648120422211.png?type=webp&to=min&r=640'} />
+        <text>
+          {sadDogeSay}
+        </text>
+      </div>
+    )
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Container">
+      <div className="Header" >
+        <text>
+          Hello World
+        </text>
+      </div>
+      <SadDoge sadDogeSay="I am hungry"/>
+      <SadDoge sadDogeSay="I want to go home"/>
     </div>
   );
 }
