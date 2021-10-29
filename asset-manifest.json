@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/GordonLShih/MiRoom/static/css/main.6a0cc151.chunk.css",
+    "main.js": "/GordonLShih/MiRoom/static/js/main.55c49759.chunk.js",
+    "main.js.map": "/GordonLShih/MiRoom/static/js/main.55c49759.chunk.js.map",
+    "runtime-main.js": "/GordonLShih/MiRoom/static/js/runtime-main.cb62d151.js",
+    "runtime-main.js.map": "/GordonLShih/MiRoom/static/js/runtime-main.cb62d151.js.map",
+    "static/js/2.591f2262.chunk.js": "/GordonLShih/MiRoom/static/js/2.591f2262.chunk.js",
+    "static/js/2.591f2262.chunk.js.map": "/GordonLShih/MiRoom/static/js/2.591f2262.chunk.js.map",
+    "static/js/3.7acedb70.chunk.js": "/GordonLShih/MiRoom/static/js/3.7acedb70.chunk.js",
+    "static/js/3.7acedb70.chunk.js.map": "/GordonLShih/MiRoom/static/js/3.7acedb70.chunk.js.map",
+    "index.html": "/GordonLShih/MiRoom/index.html",
+    "static/css/main.6a0cc151.chunk.css.map": "/GordonLShih/MiRoom/static/css/main.6a0cc151.chunk.css.map",
+    "static/js/2.591f2262.chunk.js.LICENSE.txt": "/GordonLShih/MiRoom/static/js/2.591f2262.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cb62d151.js",
+    "static/js/2.591f2262.chunk.js",
+    "static/css/main.6a0cc151.chunk.css",
+    "static/js/main.55c49759.chunk.js"
+  ]
+}
