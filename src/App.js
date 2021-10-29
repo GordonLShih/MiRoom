@@ -21,6 +21,7 @@ const App = () => {
       </div>
       <SadDoge sadDogeSay="I am hungry"/>
       <SadDoge sadDogeSay="I want to go home"/>
+      <SadDoge sadDogeSay="I miss Ami"/>
     </div>
   );
 }
