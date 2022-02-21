@@ -2,14 +2,16 @@ import './App.css';
 import { BiMenu } from 'react-icons/bi'
 import { GiShoppingCart } from 'react-icons/gi'
 import topImg from './images/topImg.png'
+import jsonData from './data.json';
 
 
 const App = () => {
+
   const ImagesBlock = () => {
     return (
       <div className="imageBlockContainer">
-        <img className="imageBlockImg" src={'https://cdn130.picsart.com/320648120422211.png?type=webp&to=min&r=640'}/>
-        <img className="imageBlockImg" src={'https://cdn130.picsart.com/320648120422211.png?type=webp&to=min&r=640'}/>
+        <img className="imageBlockImg" src={jsonData.item1.img}/>
+        <img className="imageBlockImg" src={jsonData.item2.img}/>
       </div>
     )
   }
@@ -33,9 +35,9 @@ const App = () => {
           <div className="horizontalLine" />
           <div className="verticalLine" />
           <div className="contentBox" >
-            <ImagesBlock/>
-            <ImagesBlock/>
-            <ImagesBlock/>
+            <ImagesBlock imgSrc="https://cdn130.picsart.com/320648120422211.png?type=webp&to=min&r=640"/>
+            <ImagesBlock imgSrc="https://cdn130.picsart.com/320648120422211.png?type=webp&to=min&r=640"/>
+            <ImagesBlock imgSrc="https://cdn130.picsart.com/320648120422211.png?type=webp&to=min&r=640"/>
           </div>
         </div>
       </div>
