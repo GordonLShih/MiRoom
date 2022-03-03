@@ -1,12 +1,14 @@
 {
-    "item1":{
-        "img": "https://cdn130.picsart.com/320648120422211.png?type=webp&to=min&r=640",
-        "itemName": "puppy 1",
-        "stock" : 1
-    },
-    "item2":{
-        "img": "https://cdn130.picsart.com/320648120422211.png?type=webp&to=min&r=640",
-        "itemName": "puppy 2",
-        "stock" : 2
-    }
+  "item1": {
+    "img": "https://i.imgur.com/ilPPxwXh.jpg",
+    "itemName": "窩就色色",
+    "stock": 13,
+    "price": "5269"
+  },
+  "item2": {
+    "img": "https://i.imgur.com/38mmrJT.jpg",
+    "itemName": "很想色色，對吧",
+    "stock": 21,
+    "price": "6969"
+  }
 }
