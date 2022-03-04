@@ -9,7 +9,7 @@ const Cart = () => {
   return (
     <div className="Container">
       <h1>This is Cart page</h1>
-      <Link to="/">Back</Link>
+      <Link to="/MiRoom">Back</Link>
     </div>
   );
 };
