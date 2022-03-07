@@ -1,4 +1,4 @@
-import "./App.css";
+import "./Main.css";
 import React, { useState, useEffect } from "react";
 import { BiMenu } from "react-icons/bi";
 import { GiShoppingCart } from "react-icons/gi";
@@ -19,17 +19,29 @@ const Main = () => {
   const ImagesBlock = () => {
     return (
       <div className="imageBlockContainer">
-        <div>
+        <div className="fullImgBlock">
           <img className="imageBlockImg" src={jsonData.item1.img} />
           <p>產品名稱：{jsonData.item1.itemName}</p>
-          <p>數量：{jsonData.item1.stock}</p>
           <p>價錢：{jsonData.item1.price + "$"}</p>
+          <button
+            onClick={() => {
+              alert("已加入");
+            }}
+          >
+            加入購物車
+          </button>
         </div>
-        <div>
+        <div className="fullImgBlock">
           <img className="imageBlockImg" src={jsonData.item2.img} />
           <p>產品名稱：{jsonData.item2.itemName}</p>
-          <p>數量：{jsonData.item2.stock}</p>
           <p>價錢：{jsonData.item2.price + "$"}</p>
+          <button
+            onClick={() => {
+              alert("已加入");
+            }}
+          >
+            加入購物車
+          </button>
         </div>
       </div>
     );
@@ -43,7 +55,7 @@ const Main = () => {
         <BiMenu className="biMenu" color="#fff" />
         <b style={{ color: "#fff" }}>mi.room</b>
         <nav>
-          <Link to="/cart">
+          <Link to="/MiRoom/cart">
             <GiShoppingCart className="giShoppingCart" color="#fff" />
           </Link>
         </nav>

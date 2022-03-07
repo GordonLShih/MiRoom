@@ -1,4 +1,4 @@
-import "./App.css";
+import "./Cart.css";
 import React, { useState, useEffect } from "react";
 import { BiMenu } from "react-icons/bi";
 import { GiShoppingCart } from "react-icons/gi";

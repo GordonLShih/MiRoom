@@ -11,7 +11,7 @@ const App = () => {
     <div className="Container">
       <Routes>
         <Route path="/MiRoom" element={<Main />} />
-        <Route path="cart" element={<Cart />} />
+        <Route path="/MiRoom/cart" element={<Cart />} />
       </Routes>
     </div>
   );
