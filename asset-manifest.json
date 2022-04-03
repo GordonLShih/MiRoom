@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/MiRoom/static/css/main.d5ceadf4.chunk.css",
-    "main.js": "/MiRoom/static/js/main.516ae6ef.chunk.js",
-    "main.js.map": "/MiRoom/static/js/main.516ae6ef.chunk.js.map",
+    "main.css": "/MiRoom/static/css/main.395cf8fe.chunk.css",
+    "main.js": "/MiRoom/static/js/main.d915f1be.chunk.js",
+    "main.js.map": "/MiRoom/static/js/main.d915f1be.chunk.js.map",
     "runtime-main.js": "/MiRoom/static/js/runtime-main.1ff94a98.js",
     "runtime-main.js.map": "/MiRoom/static/js/runtime-main.1ff94a98.js.map",
-    "static/js/2.28606d58.chunk.js": "/MiRoom/static/js/2.28606d58.chunk.js",
-    "static/js/2.28606d58.chunk.js.map": "/MiRoom/static/js/2.28606d58.chunk.js.map",
+    "static/js/2.5dd44016.chunk.js": "/MiRoom/static/js/2.5dd44016.chunk.js",
+    "static/js/2.5dd44016.chunk.js.map": "/MiRoom/static/js/2.5dd44016.chunk.js.map",
     "static/js/3.c4dcc12b.chunk.js": "/MiRoom/static/js/3.c4dcc12b.chunk.js",
     "static/js/3.c4dcc12b.chunk.js.map": "/MiRoom/static/js/3.c4dcc12b.chunk.js.map",
     "index.html": "/MiRoom/index.html",
-    "static/css/main.d5ceadf4.chunk.css.map": "/MiRoom/static/css/main.d5ceadf4.chunk.css.map",
-    "static/js/2.28606d58.chunk.js.LICENSE.txt": "/MiRoom/static/js/2.28606d58.chunk.js.LICENSE.txt",
+    "static/css/main.395cf8fe.chunk.css.map": "/MiRoom/static/css/main.395cf8fe.chunk.css.map",
+    "static/js/2.5dd44016.chunk.js.LICENSE.txt": "/MiRoom/static/js/2.5dd44016.chunk.js.LICENSE.txt",
     "static/media/topImg.6cdb505b.png": "/MiRoom/static/media/topImg.6cdb505b.png"
   },
   "entrypoints": [
     "static/js/runtime-main.1ff94a98.js",
-    "static/js/2.28606d58.chunk.js",
-    "static/css/main.d5ceadf4.chunk.css",
-    "static/js/main.516ae6ef.chunk.js"
+    "static/js/2.5dd44016.chunk.js",
+    "static/css/main.395cf8fe.chunk.css",
+    "static/js/main.d915f1be.chunk.js"
   ]
 }
