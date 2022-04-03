@@ -16,14 +16,16 @@ const options = [
 ];
 
 const Main = () => {
+  const [showDetail, setShowDetail] = useState(false);
   const ImagesBlock = () => {
     return (
       <div className="imageBlockContainer">
         <div className="fullImgBlock">
           <img className="imageBlockImg" src={jsonData.item1.img} />
-          <p>產品名稱：{jsonData.item1.itemName}</p>
-          <p>價錢：{jsonData.item1.price + "$"}</p>
+          <label>產品名稱：{jsonData.item1.itemName}</label>
+          <label>價錢：{jsonData.item1.price + "$"}</label>
           <button
+            className="label"
             onClick={() => {
               alert("已加入");
             }}
@@ -32,10 +34,23 @@ const Main = () => {
           </button>
         </div>
         <div className="fullImgBlock">
-          <img className="imageBlockImg" src={jsonData.item2.img} />
-          <p>產品名稱：{jsonData.item2.itemName}</p>
-          <p>價錢：{jsonData.item2.price + "$"}</p>
+          <img
+            className="imageBlockImg"
+            src={jsonData.item2.img}
+            onMouseEnter={() => {
+              setShowDetail(true);
+            }}
+            onMouseLeave={() => {
+              setShowDetail(false);
+            }}
+            onClick={() => {
+              alert("clicked");
+            }}
+          />
+          <label>產品名稱：{jsonData.item2.itemName}</label>
+          <label>價錢：{jsonData.item2.price + "$"}</label>
           <button
+            className="label"
             onClick={() => {
               alert("已加入");
             }}
@@ -72,7 +87,6 @@ const Main = () => {
           <div className="contentBox">
             <ImagesBlock />
             {false ? <ImagesBlock /> : null}
-
             <Select
               defaultValue={selectedOption}
               onChange={setSelectedOption}
@@ -94,6 +108,7 @@ const Main = () => {
           </div>
         </div>
       </div>
+      <div className="Footer" />
     </div>
   );
 };
