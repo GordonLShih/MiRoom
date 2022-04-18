@@ -14,11 +14,12 @@ const firebaseConfig = {
   measurementId: "G-69GZJP6MMK",
 };
 
-const Database = () => {
+const Database = (itemNum) => {
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
-  const database = ref(getDatabase(), "MiRoom/item1/img");
-  const [finalData, setFinalData] = useState();
+  const itemStr = itemNum.toString();
+  const database = ref(getDatabase(), "MiRoom/item" + itemStr);
+  const [finalData, setFinalData] = useState("");
   useEffect(() => {
     onValue(database, (snapshot) => {
       const data = snapshot.val();
@@ -27,5 +28,27 @@ const Database = () => {
   }, []);
   return finalData;
 };
+
+// const app = initializeApp(firebaseConfig);
+// const analytics = getAnalytics(app);
+// const database = ref(getDatabase(), "MiRoom/item1/price");
+
+// const GetApiData = () => {
+//   const [finalData, setFinalData] = useState("123");
+//   useEffect(() => {
+//     onValue(database, (snapshot) => {
+//       const data = snapshot.val();
+//       setFinalData(data);
+//     });
+//   }, []);
+
+//   return finalData;
+// };
+
+// const Database = {
+//   name: "MiRoom",
+//   number: "69",
+//   img: GetApiData("1"),
+// };
 
 export default Database;

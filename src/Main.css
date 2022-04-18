@@ -74,7 +74,8 @@
 
 .contentBox {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   width: 100%;
   height: auto;
@@ -84,9 +85,10 @@
 
 .imageBlockContainer {
   display: flex;
-  width: 80%;
+  width: 50%;
   justify-content: space-between;
   margin-top: 15px;
+  margin-bottom: 15px;
   /* background-color: blanchedalmond; */
 }
 
@@ -118,11 +120,12 @@
   width: 48%;
 }
 
-.Footer {
+.footer {
   display: flex;
   width: 100%;
   height: 70px;
+  margin-top: 30px;
   background-color: #5e5e5e;
-  align-items: center;
-  justify-content: space-between;
+  /* background-color: aqua; */
+  justify-self: flex-end;
 }

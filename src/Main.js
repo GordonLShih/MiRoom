@@ -7,7 +7,7 @@ import { Routes, Route, Link } from "react-router-dom";
 
 import topImg from "./images/topImg.png";
 import jsonData from "./data.json";
-// import Database from "./Database";
+import Database from "./Database";
 
 const options = [
   { value: "chocolate", label: "Chocolate" },
@@ -17,38 +17,14 @@ const options = [
 
 const Main = () => {
   const [showDetail, setShowDetail] = useState(false);
-  const ImagesBlock = () => {
+  const ImagesBlock = (props) => {
     return (
       <div className="imageBlockContainer">
         <div className="fullImgBlock">
-          <img className="imageBlockImg" src={jsonData.item1.img} />
-          <label>產品名稱：{jsonData.item1.itemName}</label>
-          <label>價錢：{jsonData.item1.price + "$"}</label>
-          <button
-            className="label"
-            onClick={() => {
-              alert("已加入");
-            }}
-          >
-            加入購物車
-          </button>
-        </div>
-        <div className="fullImgBlock">
-          <img
-            className="imageBlockImg"
-            src={jsonData.item2.img}
-            onMouseEnter={() => {
-              setShowDetail(true);
-            }}
-            onMouseLeave={() => {
-              setShowDetail(false);
-            }}
-            onClick={() => {
-              alert("clicked");
-            }}
-          />
-          <label>產品名稱：{jsonData.item2.itemName}</label>
-          <label>價錢：{jsonData.item2.price + "$"}</label>
+          <img className="imageBlockImg" src={Database(props.num).img} />
+          {/* <label>產品名稱：{jsonData.item1.itemName}</label>*/}
+          <label>產品名稱：{Database(props.num).itemName}</label>
+          <label>價錢：{Database(props.num).price}$</label>
           <button
             className="label"
             onClick={() => {
@@ -61,8 +37,6 @@ const Main = () => {
       </div>
     );
   };
-
-  const [selectedOption, setSelectedOption] = useState(null);
 
   return (
     <div className="Container">
@@ -85,9 +59,23 @@ const Main = () => {
           <div className="horizontalLine" />
           <div className="verticalLine" />
           <div className="contentBox">
-            <ImagesBlock />
-            {false ? <ImagesBlock /> : null}
-            <Select
+            {/* <ImagesBlock num={1} />
+            <ImagesBlock num={2} />
+            <ImagesBlock num={3} /> */}
+            {[...Array(3)].map((x, i) => (
+              <ImagesBlock num={i + 1} />
+            ))}
+          </div>
+        </div>
+      </div>
+      <div className="footer" />
+    </div>
+  );
+};
+
+export default Main;
+{
+  /* <Select
               defaultValue={selectedOption}
               onChange={setSelectedOption}
               options={options}
@@ -104,13 +92,5 @@ const Main = () => {
               }}
             >
               確認
-            </button>
-          </div>
-        </div>
-      </div>
-      <div className="Footer" />
-    </div>
-  );
-};
-
-export default Main;
+            </button> */
+}
