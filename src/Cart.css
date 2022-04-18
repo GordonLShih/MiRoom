@@ -26,7 +26,7 @@
   padding-right: 13px;
 }
 
-.mainBackground {
+.CartBodyBack {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -35,7 +35,7 @@
   align-items: center;
 }
 
-.mainBody {
+.CartBody {
   display: flex;
   flex-direction: column;
   width: 95%;

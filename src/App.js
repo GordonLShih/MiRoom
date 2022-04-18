@@ -8,12 +8,10 @@ import Cart from "./Cart";
 
 const App = () => {
   return (
-    <div className="Container">
-      <Routes>
-        <Route path="/MiRoom" element={<Main />} />
-        <Route path="/MiRoom/cart" element={<Cart />} />
-      </Routes>
-    </div>
+    <Routes>
+      <Route path="/MiRoom" element={<Main />} />
+      <Route path="/MiRoom/cart" element={<Cart />} />
+    </Routes>
   );
 };
 

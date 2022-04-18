@@ -1,12 +1,12 @@
 import "./Main.css";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { BiMenu } from "react-icons/bi";
 import { GiShoppingCart } from "react-icons/gi";
-import Select from "react-select";
-import { Routes, Route, Link } from "react-router-dom";
+// import Select from "react-select";
+import { Link } from "react-router-dom";
 
 import topImg from "./images/topImg.png";
-import jsonData from "./data.json";
+// import jsonData from "./data.json";
 import Database from "./Database";
 
 const options = [
@@ -16,7 +16,6 @@ const options = [
 ];
 
 const Main = () => {
-  const [showDetail, setShowDetail] = useState(false);
   const ImagesBlock = (props) => {
     return (
       <div className="imageBlockContainer">
@@ -50,8 +49,8 @@ const Main = () => {
         </nav>
         {/* <GiShoppingCart className="giShoppingCart" color="#fff" /> */}
       </header>
-      <div className="mainBackground">
-        <div className="mainBody">
+      <div className="MainBodyBack">
+        <div className="MainBody">
           <img className="topImage" src={topImg} alt="topImage" />
           <div className="midTitle">
             <i>Mi casa es tu casa</i>

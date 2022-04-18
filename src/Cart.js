@@ -24,8 +24,8 @@ const Cart = () => {
         </nav>
         {/* <GiShoppingCart className="giShoppingCart" color="#fff" /> */}
       </header>
-      <div className="mainBackground">
-        <div className="mainBody">
+      <div className="CartBodyBack">
+        <div className="CartBody">
           <h1>This is cart</h1>
         </div>
       </div>
