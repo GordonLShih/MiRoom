@@ -29,26 +29,4 @@ const Database = (itemNum) => {
   return finalData;
 };
 
-// const app = initializeApp(firebaseConfig);
-// const analytics = getAnalytics(app);
-// const database = ref(getDatabase(), "MiRoom/item1/price");
-
-// const GetApiData = () => {
-//   const [finalData, setFinalData] = useState("123");
-//   useEffect(() => {
-//     onValue(database, (snapshot) => {
-//       const data = snapshot.val();
-//       setFinalData(data);
-//     });
-//   }, []);
-
-//   return finalData;
-// };
-
-// const Database = {
-//   name: "MiRoom",
-//   number: "69",
-//   img: GetApiData("1"),
-// };
-
 export default Database;
