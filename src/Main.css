@@ -127,6 +127,20 @@
 
 .label {
   width: 48%;
+  margin-top: 20px;
+}
+
+.popOutContent {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: 100%;
+  /* align-items: center;
+  justify-content: center; */
+  top: 70px;
+  position: fixed;
+  /* opacity: 0.5; */
+  background-color: #e8ebde;
 }
 
 .footer {
