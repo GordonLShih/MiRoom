@@ -1,11 +1,21 @@
 import "./Main.css";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Database from "./Database";
 import PopoutDetail from "./PopoutDetail";
 
 const ImagesBlock = (props) => {
   const [opacityNum, setOpacityNum] = useState("0");
   const [openDetail, setOpenDetail] = useState(false);
+
+  // const scrollBarCompensation = window.innerWidth - document.body.offsetWidth;
+
+  // useEffect(() => {
+  //   if (openDetail == false) {
+  //     document.body.style.overflow = "";
+  //   } else {
+  //     document.body.style.overflow = "hidden";
+  //   }
+  // }, [openDetail]);
 
   return (
     <>

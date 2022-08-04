@@ -1,5 +1,5 @@
 import "./Main.css";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { FiX } from "react-icons/fi";
 
 import Database from "./Database";
