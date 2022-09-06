@@ -14,13 +14,18 @@ const App = () => {
     <>
       <div className="topHeader">
         <BiMenu className="biMenu" color="#fff" />
-        <b style={{ color: "#fff" }}>mi.room</b>
+        <nav>
+          <Link to="/MiRoom">
+            <b style={{ color: "#fff" }}>mi.room</b>
+          </Link>
+        </nav>
         <nav>
           <Link to="/MiRoom/cart">
             <GiShoppingCart className="giShoppingCart" color="#fff" />
           </Link>
         </nav>
       </div>
+      <div className="routePadding" />
       <Routes>
         <Route path="/MiRoom" element={<Main />} />
         {/* <Route path="/MiRoom" element={<Test />} /> */}

@@ -7,6 +7,8 @@ const ImagesBlock = (props) => {
   const [opacityNum, setOpacityNum] = useState("0");
   const [openDetail, setOpenDetail] = useState(false);
 
+  const itemName = Database(props.num).itemName;
+
   // const scrollBarCompensation = window.innerWidth - document.body.offsetWidth;
 
   // useEffect(() => {
@@ -94,7 +96,7 @@ const ImagesBlock = (props) => {
         <button
           className="label"
           onClick={() => {
-            alert("已加入");
+            alert(`${itemName} 已加入購物車`);
           }}
         >
           加入購物車
