@@ -7,7 +7,7 @@ import { GiShoppingCart } from "react-icons/gi";
 
 import Main from "./Main";
 import Cart from "./Cart";
-import Test from "./Test";
+// import Test from "./Test";
 
 const App = () => {
   return (
